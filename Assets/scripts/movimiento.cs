@@ -39,12 +39,13 @@ public class movimiento : MonoBehaviour
             rigidbody.AddForce(Vector3.back * Time.fixedDeltaTime * speed, ForceMode.Impulse);
         }
 
-        if (Keyboard.current.spaceKey.IsPressed() && jump)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && jump)
         {
             rigidbody.AddForce(Vector3.up  * jumpforce, ForceMode.Impulse);
         }
+
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         // Detecta si choca contra un objeto con un nombre específico
         if (collision.gameObject.tag == "piso")

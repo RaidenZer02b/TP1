@@ -253,7 +253,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::movimiento
   rigidbody: {fileID: 8384047408178565295}
+  jump: 0
   speed: 10
+  jumpforce: 0
 --- !u!54 &8384047408178565295
 Rigidbody:
   m_ObjectHideFlags: 0
