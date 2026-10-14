@@ -571,8 +571,7 @@ Transform:
   m_LocalPosition: {x: 6.15, y: 0.67, z: 0.86}
   m_LocalScale: {x: 2.2463, y: 2.2463, z: 2.2463}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 595181528}
+  m_Children: []
   m_Father: {fileID: 1163935621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &104722115
@@ -589,7 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CambioDeEscena
   nombreEscenaDestino: xd
   tagDelJugador: Player
-  uiAMostrar: {fileID: 323682503}
+  uiAMostrar: {fileID: 595181527}
   tiempoDeEspera: 1
 --- !u!65 &104722116
 BoxCollider:
@@ -5492,7 +5491,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1515925986}
-  m_Father: {fileID: 104722114}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5548,7 +5547,7 @@ Canvas:
   m_GameObject: {fileID: 595181527}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1818751295}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -17218,7 +17217,7 @@ Transform:
   m_GameObject: {fileID: 1375783390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 918.2649, y: 24.398043, z: 49.501556}
+  m_LocalPosition: {x: 101.5, y: 24.398043, z: 49.501556}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17832,7 +17831,7 @@ GameObject:
   - component: {fileID: 1515925988}
   - component: {fileID: 1515925987}
   m_Layer: 5
-  m_Name: Button
+  m_Name: boton de cambio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17845,17 +17844,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515925985}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 29.17}
-  m_LocalScale: {x: 0.09213758, y: 0.119968474, z: 0.17838836}
+  m_LocalRotation: {x: 0.00000001117587, y: -0.02159327, z: -0.000000014901159, w: 0.9997669}
+  m_LocalPosition: {x: 0, y: 0, z: -40.65}
+  m_LocalScale: {x: 1.0516589, y: 1.3693208, z: 2.0361257}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 691297263}
   m_Father: {fileID: 595181528}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -2.475, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -484.6, y: -245.14}
+  m_AnchoredPosition: {x: 2.74, y: 6.74}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515925987
@@ -17902,13 +17901,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1061909029}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 104722115}
+        m_TargetAssemblyTypeName: CambioDeEscena, Assembly-CSharp
+        m_MethodName: CargarSiguienteEscena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -29349,6 +29348,7 @@ SceneRoots:
   - {fileID: 777498742}
   - {fileID: 745290851}
   - {fileID: 1136310735}
+  - {fileID: 595181528}
   - {fileID: 1753192008}
   - {fileID: 1645357320}
   - {fileID: 693544620}

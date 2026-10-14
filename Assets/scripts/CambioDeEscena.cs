@@ -25,7 +25,10 @@ public class CambioDeEscena : MonoBehaviour
     {
         if (other.CompareTag(tagDelJugador) && !cambiandoDeEscena)
         {
-            StartCoroutine(CambiarEscenaConRetraso3D());
+            if (uiAMostrar != null)
+            {
+                uiAMostrar.SetActive(true);
+            }
         }
     }
 
